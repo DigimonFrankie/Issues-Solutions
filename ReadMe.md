@@ -12,6 +12,7 @@ This is a note for the issues I met and the solutions for them. The situtation i
 - [GitHub](#github)
   - [Push to new repo](#push-to-new-repo)
   - [Change repo url](#change-repo-url)
+  - [Can't push to repo](#cant-push-to-repo)
 - [3. Jupyter Lab](#3-jupyter-lab)
   - [3.1. Autocomplete](#31-autocomplete)
   - [3.2. Ipython is Not defined](#32-ipython-is-not-defined)
@@ -45,6 +46,13 @@ Set new url
 ```
 git remote set-url origin [repo_url].git
 ```
+
+## Can't push to repo
+Use `git pull origin main` before you push anything.
+
+Assume that you are using `main` as a name for your remote.
+
+You need to `pull` before `push`, to make your local repository up-to-date before you push something (just in case someone else has already updated code on github.com). This helps in resolving conflicts locally.
 
 # 3. Jupyter Lab
 
